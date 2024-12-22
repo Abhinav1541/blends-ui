@@ -34,10 +34,10 @@ export const WorkList = () => {
     },
     {
       id: 3,
-      title: 'Sentosa Realty',
-      description: 'Branding',
-      link: '/work/sentosa',
-      image: sentosa,
+      title: 'Daulat',
+      description: 'Branding and Content Creation',
+      link: '/work/daulat',
+      image: daulat,
     },
     {
       id: 4,
