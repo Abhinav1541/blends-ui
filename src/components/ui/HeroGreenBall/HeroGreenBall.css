@@ -1,0 +1,10 @@
+#ball {
+  width: 45px;
+  height: 45px;
+  background-color: #20a564;
+  border-radius: 50%;
+  z-index: 1;
+
+  /* make this responsive using rem for 577 */
+  offset-path: path("M 0 0 A 10 2.1 0 0 0 0 -577.6");
+}

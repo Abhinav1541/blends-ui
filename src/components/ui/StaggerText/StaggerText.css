@@ -1,0 +1,40 @@
+.animated-slideinleft {
+  display: flex;
+  animation: slideinleft var(--total, 0) cubic-bezier(0.2, 0.825, 0, 0.99)
+    var(--startdelay, 0) infinite;
+  opacity: 0;
+}
+
+@keyframes slideinleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated-slideindown {
+  display: flex;
+  animation: slideindown var(--total, 0) ease-in var(--startdelay, 0) infinite;
+  opacity: 0;
+}
+
+@keyframes slideindown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+  }
+}

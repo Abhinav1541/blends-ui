@@ -1,0 +1,15 @@
+.group .underline {
+  content: "";
+  position: absolute;
+  bottom: -0.25rem; /* Adjust as needed */
+  left: 50%;
+  width: 0;
+  height: 2px; /* Adjust as needed */
+  background-color: green;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.group:hover .underline {
+  width: 25%;
+  left: 50%;
+}

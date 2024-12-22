@@ -1,0 +1,33 @@
+#blends-rotating {
+  position: relative;
+  /* overflow: hidden; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#blends-rotating::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  z-index: 0;
+  background: url("../../../assets/svg/blends-rotating.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-name: yoyo;
+  animation-timing-function: linear;
+}
+
+@keyframes yoyo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

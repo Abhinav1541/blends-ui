@@ -1,0 +1,17 @@
+.fade-animation {
+  animation: fadet 10s ease-in-out infinite;
+}
+
+@keyframes fadet {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
