@@ -6,11 +6,10 @@ import { Link } from "react-router-dom";
 export const WorkCard = ({ img, title, description, link }) => {
   return (
     <div className="flex flex-col items-center relative group w-full max-w-md mx-auto">
-      {/* Image Section */}
       <div className="w-full">
         <img
           src={img}
-          className="w-full h-56 sm:h-72 md:h-80 lg:h-96 object-cover"
+          className="w-full object-cover"
           alt={title}
         />
       </div>

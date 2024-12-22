@@ -1,13 +1,11 @@
 import React from "react";
-import mission from "../../assets/svg/mission.svg";
 import { StaggerText } from "../ui/StaggerText/StaggerText";
 import { BlendsRotatingIcon } from "../ui/BlendsRotatingIcon/BlendsRotatingIcon";
 
 export const Mission = () => {
   return (
     <div className="relative flex bg-mission bg-cover bg-no-repeat h-screen md:h-[70rem] xl:h-[85rem] justify-center md:justify-end">
-      {/* StaggerText Section */}
-      <div className="text-black mt-40 md:mt-48 xl:mt-72 px-6 md:px-12">
+      <div className="text-black mt-80 xl:mt-72 px-6 md:px-12">
         <StaggerText
           className="text-4xl md:text-6xl xl:text-8xl font-akira text-black gap-6 md:gap-8 xl:gap-[3rem] items-end md:pr-[2rem] xl:pr-[3.25rem]"
           text={["you", "imagine", "we", "will", "craft"]}

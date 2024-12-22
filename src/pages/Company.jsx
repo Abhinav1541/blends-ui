@@ -30,7 +30,7 @@ export const Company = ({ data }) => {
   return (
     <div>
       {/* Company Title */}
-      <TextDivider>
+      <TextDivider className="pt-40">
         <div className="text-white font-poppins font-semibold text-3xl sm:text-4xl lg:text-6xl text-center">
           {company}
         </div>
@@ -38,14 +38,14 @@ export const Company = ({ data }) => {
 
       <div className="pt-10 px-5 sm:px-10 lg:px-20">
         {/* Main Section */}
-        <div className="flex flex-col lg:flex-row items-center justify-between mt-10 gap-8 lg:gap-16">
+        <div className="flex flex-col lg:flex-row items-center justify-evenly mt-10 gap-8 ">
           <img
             src={mainImage}
             className="w-full max-w-lg lg:max-w-2xl rounded-md"
             alt={`${company} main`}
           />
 
-          <div className="bg-[rgba(32,165,100,0.7)] flex flex-col items-center justify-center py-6 px-8  text-poppins text-white rounded-md gap-4 w-full lg:w-1/2 ">
+          <div className="bg-[rgba(32,165,100,0.7)] flex flex-col items-center justify-center py-6 px-8 font-poppins text-white rounded-md gap-4 w-full lg:w-2/5">
             <div className="text-xl sm:text-2xl font-semibold">Client</div>
             <div className="text-lg sm:text-xl">{company}</div>
             <hr className="block h-1 border-t-[1px] w-full sm:w-[80%] border-white my-2" />
@@ -114,7 +114,7 @@ export const Company = ({ data }) => {
         {videos && <WorkVideos videos={videos} />}
 
         {/* Let's Connect Section */}
-        <LetsConnect className="w-full mt-10" />
+        <LetsConnect className="w-full mb-20" />
       </div>
     </div>
   );

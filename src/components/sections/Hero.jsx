@@ -14,15 +14,15 @@ export const Hero = () => {
       </div>
 
       {/* Backdrop Blur */}
-      <div className="backdrop-blur-[10px] absolute top-0 left-0 w-full h-full z-[2]"></div>
+      <div className="backdrop-blur-[10px] absolute top-0 left-0 w-full h-full z-10"></div>
 
       {/* Hero Text */}
-      <div className="text-white font-akira text-3xl w-full sm:text-4xl md:text-5xl lg:text-6xl text-center z-10 absolute top-[30%] uppercase">
+      <div className="text-white font-akira text-3xl w-full sm:text-4xl md:text-5xl lg:text-6xl text-center z-10 absolute top-56 uppercase">
         The Design and Marketing Agency You NEED
       </div>
 
       {/* Scroll Text Background */}
-      <div className="z-10 absolute top-[55%] py-10 sm:py-12 md:py-16 bg-black-blur w-full">
+      <div className="z-10 absolute bottom-24 lg:bottom-10 py-0 lg:py-16 bg-black-blur w-full">
         <ScrollText />
       </div>
     </div>

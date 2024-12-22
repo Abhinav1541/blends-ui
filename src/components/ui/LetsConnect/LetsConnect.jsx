@@ -1,7 +1,8 @@
-import React from "react";
-import connect from "../../../assets/svg/connect.svg";
-import blackarrowTl from "../../../assets/svg/black-arrow-tl.svg";
-import { Button } from "../Button/Button";
+import React from 'react';
+import { HashLink } from 'react-router-hash-link';
+import connect from '../../../assets/svg/connect.svg';
+import blackarrowTl from '../../../assets/svg/black-arrow-tl.svg';
+import { Button } from '../Button/Button';
 
 export const LetsConnect = ({ className }) => {
   return (
@@ -21,14 +22,16 @@ export const LetsConnect = ({ className }) => {
       </div>
 
       {/* Button */}
-      <Button className="py-2 sm:py-3 lg:py-4 rounded-full px-4 sm:px-6 lg:px-8 relative z-10 bg-white hover:border-white">
-        <div className="flex gap-2 items-center px-2">
-          <span className="text-base sm:text-lg lg:text-xl text-black font-poppins uppercase tracking-wide">
-            Get in touch
-          </span>
-          <img src={blackarrowTl} alt="Arrow" />
-        </div>
-      </Button>
+      <HashLink to="/#contactus">
+        <Button className="py-2 sm:py-3 lg:py-4 hover:cursor-pointer rounded-full px-4 sm:px-6 lg:px-8 relative z-10 bg-white hover:border-white">
+          <div className="flex gap-2 items-center px-2">
+            <span className="text-base sm:text-lg lg:text-xl text-black font-poppins uppercase tracking-wide">
+              Get in touch
+            </span>
+            <img src={blackarrowTl} alt="Arrow" />
+          </div>
+        </Button>
+      </HashLink>
     </div>
   );
 };

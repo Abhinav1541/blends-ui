@@ -16,11 +16,11 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className="hidden lg:flex fixed top-0 left-0 right-0 backdrop-blur-sm h-[100px] items-center z-50 pl-24">
+      <nav className="hidden lg:flex fixed top-0 left-0 right-0 backdrop-blur-sm h-[100px] items-center z-50">
         <ul className="flex items-center w-full justify-center gap-[8rem]">
           <li>
             <NavHashLink
-              className=" text-white font-akira text-lg"
+              className="text-white font-akira"
               smooth
               to="/#aboutus"
               scroll={(el) => scrollWithOffset(el, 150)}
@@ -29,7 +29,7 @@ export const Navbar = () => {
             </NavHashLink>
           </li>
           <li>
-            <NavLink to="/work" className="text-white font-akira text-lg">
+            <NavLink to="/work" className="text-white font-akira">
               OUR WORK
             </NavLink>
           </li>
@@ -40,7 +40,7 @@ export const Navbar = () => {
           </li>
           <li>
             <NavHashLink
-              className="text-white font-akira text-lg"
+              className="text-white font-akira"
               smooth
               to="/#whatweoffer"
               scroll={(el) => scrollWithOffset(el, 100)}
@@ -48,10 +48,10 @@ export const Navbar = () => {
               OUR SERVICES
             </NavHashLink>
           </li>
-          <li className="">
+          <li>
             <NavHashLink smooth to="/#contactus" scroll={(el) => scrollWithOffset(el, 200)}>
               <Button>
-                <span className="text-white font-akira text-lg">CONTACT US</span>
+                <span className="text-white font-akira">CONTACT US</span>
               </Button>
             </NavHashLink>
           </li>
@@ -64,7 +64,7 @@ export const Navbar = () => {
         <button type="button" className="absolute right-4 focus:outline-none" onClick={toggleMenu}>
           <GiHamburgerMenu className="text-white" size={40} />
         </button>
-        <div className={`absolute top-0 w-full bg-black flex flex-col space-y-4 items-center py-4 transition-opacity duration-500 ease-in-out ${
+        <div className={`absolute top-0 w-full bg-black flex lg:hidden flex-col space-y-4 items-center py-4 transition-opacity duration-500 ease-in-out ${
             isOpen ? "opacity-100 visible" : "opacity-0 invisible"
           } md:static md:flex md:flex-row md:space-y-0 md:space-x-6 md:opacity-100 md:visible`}>
           <ul className="flex flex-col items-center justify-center w-full h-96 gap-y-8">

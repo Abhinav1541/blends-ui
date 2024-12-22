@@ -10,7 +10,7 @@ import { scrollWithOffset } from "../../utils/Utils";
 
 export const ConsultUs = () => {
   return (
-    <div className="relative py-[10rem] overflow-hidden">
+    <div className="relative py-10 overflow-hidden">
       <FadingGrid img={DotGrid2} />
       <div className="absolute top-0 left-0 backdrop-blur-[1.25rem] z-1 h-auto w-auto"></div>
       <div className="flex">
