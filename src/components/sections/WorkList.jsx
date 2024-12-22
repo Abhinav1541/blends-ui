@@ -41,11 +41,54 @@ export const WorkList = () => {
     },
     {
       id: 4,
-      title: "Liveplay.in",
+      title: "Exogear",
       description: "Branding",
-      link: "/work/liveplay",
-      image: liveplay,
+      link: "/work/exogear",
+      image:exogear,
+    },
+    {
+      id: 5,
+      title: "Bharat Transit",
+      description: "Branding",
+      link: "/work/bharattransit",
+      image: bharattransit,
+    },
+    {
+      id: 6,
+      title: "Surge",
+      description: "Branding",
+      link: "/work/surge",
+      image: surge,
+    },
+    {
+      id: 7,
+      title: "Cuteiclesandlyor",
+      description: "Content Creation and Social Media Management",
+      link: "/work/cuteiclesandlyor",
+      image: cute,
+    },
+    {
+      id: 8,
+      title: "Matrixs Bar and Kitchen",
+      description: "Content Creation and Social Media Management",
+      link: "/work/matrix",
+      image: matrix,
+    },
+    {
+      id: 9,
+      title: "Aasaan",
+      description: "Content Creation and Social Media Management",
+      link: "/work/aasan",
+      image: aasan,
+    },
+    {
+      id: 10,
+      title: "The T-Shirt Store",
+      description: "Product Design",
+      link: "/work/tshirt",
+      image: tshirt,
     }
+
   ];
   return (
     <div className="py-10 relative" id="work">
@@ -74,69 +117,6 @@ export const WorkList = () => {
           );
         })}
       </div>
-
-      {/* <div className="flex flex-col mt-[8rem] sm:mt-[10rem] px-4 sm:px-8 lg:px-[3.75rem] pt-[12rem] pb-[6rem] gap-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <WorkCard
-            img={sentosa}
-            title="Sentosa Realty"
-            description="Branding"
-            link="/work/sentosa"
-          />
-          <WorkCard
-            img={liveplay}
-            title="Liveplay.in"
-            description="Branding"
-            link="/work/liveplay"
-          />
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <WorkCard
-            img={daulat}
-            title="Daulat"
-            description="Branding and Content Creation"
-            link="/work/daulat"
-          />
-          <WorkCard img={exogear} title="Exogear" description="Branding" link="/work/exogear" />
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <WorkCard
-            img={bharattransit}
-            title="Bharat Transit"
-            description="Branding"
-            link="/work/bharattransit"
-          />
-          <WorkCard img={surge} title="Surge" description="Branding" link="/work/surge" />
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <WorkCard
-            img={cute}
-            title="Cuteiclesandlyor"
-            description="Content Creation and Social Media Management"
-            link="/work/cuteiclesandlyor"
-          />
-          <WorkCard
-            img={matrix}
-            title="Matrixs Bar and Kitchen"
-            description="Content Creation and Social Media Management"
-            link="/work/matrix"
-          />
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <WorkCard
-            img={aasan}
-            title="Aasaan"
-            description="Content Creation and Social Media Management"
-            link="/work/aasaan"
-          />
-          <WorkCard
-            img={tshirt}
-            title="The T-Shirt Store"
-            description="Product Design"
-            link="/work/tshirt"
-          />
-        </div>
-      </div> */}
 
       <LetsConnect />
     </div>
