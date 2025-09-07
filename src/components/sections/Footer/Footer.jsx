@@ -35,27 +35,30 @@ export const Footer = () => {
             <p>Contact</p>
           </HashLink>
         </div>
-        <div className="flex flex-col justify-center items-center lg:items-end gap-5 lg:w-1/3">
+        <div className="flex flex-col justify-center text-center text-white font-akira text-lg items-center lg:items-start gap-5 lg:w-1/3">
+          <HashLink smooth to="/blogs">
+            <p>BLOGS</p>
+          </HashLink>
           <div className="flex gap-[2rem] justify-center lg:justify-start mb-4">
             <a
               href="https://in.linkedin.com/company/blends-agency"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img alt="social-logo" src={linkedin} className="h-8 w-8 lg:h-10 lg:w-10 hover:opacity-70" />
+              <img alt="social-logo" src={linkedin} className="h-8 w-8 hover:opacity-70" />
             </a>
             <a
               href="https://www.instagram.com/blends.agency/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img alt="social-logo" src={instagram} className="h-8 w-8 mt-1 lg:h-10 lg:w-10 hover:opacity-70" />
+              <img alt="social-logo" src={instagram} className="h-8 w-8 mt-1 hover:opacity-70" />
             </a>
           </div>
           <div className="flex flex-col font-poppins text-white gap-2">
             <div className="flex flex-row">
               <p className="mr-2">Email:</p>
-              <div>
+              <div className='flex flex-col items-start'>
                 <p>
                   <a href="mailto:connect@blends.agency">connect@blends.agency</a>
                 </p>

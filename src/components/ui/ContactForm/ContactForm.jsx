@@ -15,10 +15,10 @@ export const ContactForm = () => {
     formData.delete('Interested In');
     formData.append('Interested In', interestedInValues.join(', '));
     formData.append('access_key', 'fc40d431-7731-4990-ba20-10f21bdbee90');
-
-    const response = await fetch('https://api.web3forms.com/submit', {
+const response = await fetch('https://api.web3forms.com/submit', {
       method: 'POST',
       body: formData,
+    
     });
 
     const data = await response.json();

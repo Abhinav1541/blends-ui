@@ -5,6 +5,8 @@ import { Work } from "./pages/Work";
 import { Footer } from "./components/sections/Footer/Footer";
 import { Sentosa } from "./pages/Sentosa";
 import { Company } from "./pages/Company";
+import { Blogs } from "./pages/Blogs";
+import { BlogPost } from "./pages/BlogPost";
 import { WorkDatabase } from "./utils/WorkDatabase";
 
 function App() {
@@ -14,6 +16,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/work" element={<Work />} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/blogs/:blogId" element={<BlogPost />} />
         <Route
           path="/work/sentosa"
           element={<Company data={WorkDatabase["Sentosa Realty"]} />}
